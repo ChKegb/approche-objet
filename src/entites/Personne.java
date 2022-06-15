@@ -58,22 +58,19 @@ public class Personne {
 	
 	//les getteurs
 	
+	//ajoutez une méthode qui retourne le nom
 	public String getNom(){
 		return this.nom;
 	}
+	//ajoutez une méthode qui retourne le prénom
 	public String getPrenom(){
-		return this.pr�nom;
+		return this.prenom;
 	}
+	//ajoutez une méthode qui retourne l’adresse
 	public AdressePostale getAdressePersonnelle() {
 		
 		return this.adressePersonnelle;
 	}
 	
-	//les setters 
-	public void setNom(string nom) {
-		this.nom=nom;
-	}
-	public void setPreNom(string prenom) {
-		this.pr�nom=prenom;
-	}
+	
  }
