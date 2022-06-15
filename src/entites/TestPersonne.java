@@ -1,30 +1,38 @@
 package entites;
 import java.util.*;
+import entites.Personne;
+
 public class TestPersonne {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		//Créer 2 instances de la classe Personne en renseignant la valeur de tous les attributs.
+		//Creer instances de la classe Personne en renseignant la valeur de tous les attributs.
+		
 		Personne p1=new Personne("Jacques","Laurent");
+		AdressePostale adresse1= new AdressePostale(34,"avenue banquier",3400,"Montpellier");
+		
+		// Creation de l'instance en utilisant l'instance de la classe AdressePostale
+		
+		Personne p2=new Personne("Rolland","Laurent",adresse1);
+	
 		
 		//Personne p2=new Personne();
 		
 		/*
 		 * p1.nom ="Jacques";
 		 
-		p1.prénom ="Laurent";
-		// les affectations de l'instances de personne liées à la classe adresseP
+		p1.prï¿½nom ="Laurent";
+		// les affectations de l'instances de personne liï¿½es ï¿½ la classe adresseP
 		p1.adressePersonnelle.code_postal=34970 ;
-		p1.adressePersonnelle.libellé_de_la_rue="test";
-		p1.adressePersonnelle.numéro_de_rue=25;
+		p1.adressePersonnelle.libellï¿½_de_la_rue="test";
+		p1.adressePersonnelle.numï¿½ro_de_rue=25;
 		p1.adressePersonnelle.ville ="Lattes";
 		
 		*/
 		
-		System.out.println(p1.nom);
-		System.out.println(p1.prénom);
-		System.out.println(p1.adressePersonnelle);
+		System.out.println(p2);
+		
 	}
 
 }

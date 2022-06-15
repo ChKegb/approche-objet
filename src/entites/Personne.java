@@ -1,38 +1,79 @@
 package entites;
-import java.util.*;
+
 
 public class Personne {
 	String nom;
-	String prénom;
+	String prenom;
 	AdressePostale adressePersonnelle;
 
 	// constructeur par defaut 
+	
 	public Personne() {
 		
 	}
-	// constructeur avec des parametre
-	public Personne(String nom,String prénom,AdressePostale adressePersonnelle) {
+	// constructeur avec des parametre pour la classe personne
+	
+	public Personne(String nom,String prenom) {
+		super();
 		this.nom=nom;
-		this.prénom=prénom;
+		this.prenom=prenom;	
+			
+	}
+	// second constructeur Ã  la classe Personne avec les 3 paramÃ¨tres
+	
+	public Personne(String nom,String prenom,AdressePostale adressePersonnelle) {
+		super();
+		this.nom=nom;
+		this.prenom=prenom;
 		this.adressePersonnelle =adressePersonnelle;
 			
 	}
+	
+	//ajoutez une mÃ©thode qui prend un argument en paramÃ¨tre et permet de modifier la variable dâ€™instance nom de Personne
+	
+	public void  setNom (String nom) {
+		this.nom=nom;
+	}
+	
+	// ajoutez une mÃ©thode similaire pour modifier le prÃ©nom.
+	
+	public void setPrenom(String prenom) {
+		
+		this.prenom=prenom;
+	}
+	
+	// ajoutez une mÃ©thode similaire pour modifier lâ€™adresse
+	
+	public void setAdressePostale(AdressePostale adresse) {
+	
+		this.adressePersonnelle =adresse;
+	}
+	
+	/*Les Methodes de la classe 
+	 * 
+	 * 
+	 * */
+	
+	
+	
 	//les getteurs
+	
 	public String getNom(){
 		return this.nom;
 	}
 	public String getPrenom(){
-		return this.prénom;
+		return this.prï¿½nom;
 	}
 	public AdressePostale getAdressePersonnelle() {
 		
 		return this.adressePersonnelle;
 	}
-	//les accessuers
+	
+	//les setters 
 	public void setNom(string nom) {
 		this.nom=nom;
 	}
 	public void setPreNom(string prenom) {
-		this.prénom=prenom;
+		this.prï¿½nom=prenom;
 	}
  }
