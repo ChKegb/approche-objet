@@ -1,10 +1,9 @@
 package entites;
 
-
 public class Personne {
-	String nom;
-	String prenom;
-	AdressePostale adressePersonnelle;
+	public String nom;
+	public String prenom;
+	public AdressePostale adressePersonnelle;
 
 	// constructeur par defaut 
 	
@@ -49,6 +48,13 @@ public class Personne {
 		this.adressePersonnelle =adresse;
 	}
 	
+
+	@Override
+	public String toString() {
+		return "Personne [nom=" + nom + ", prenom=" + prenom + ", adressePersonnelle=" + adressePersonnelle + "]";
+	}
+
+	
 	/*Les Methodes de la classe 
 	 * 
 	 * 
@@ -72,5 +78,6 @@ public class Personne {
 		return this.adressePersonnelle;
 	}
 	
+	//ajoutez une méthode qui permet d’afficher le nom et le prénom avec le nom de famille en majuscules.
 	
  }

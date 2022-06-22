@@ -1,6 +1,5 @@
 package entites;
 import java.util.*;
-import entites.Personne;
 
 public class TestPersonne {
 
@@ -34,7 +33,7 @@ public class TestPersonne {
 		
 		*/
 		
-		System.out.println(p2.getNom());
+		System.out.println(p2);
 		
 	}
 
