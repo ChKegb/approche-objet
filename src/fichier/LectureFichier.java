@@ -15,7 +15,7 @@ public class LectureFichier {
 		// Lire le contenu du fichier
 
 		Path path=Paths.get("/Users/kegba/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/approche-objet/src/fichier/file/recensement.csv");
-		boolean exist=Files.exists(path);
+		
 		//Lire le contenu du fichier et affichez son contenu.
 		List<String> listes = Files.readAllLines(path, StandardCharsets.UTF_8);
 		
@@ -28,7 +28,10 @@ public class LectureFichier {
 			
 			*/
 		 ArrayList<String> listeG = new ArrayList<>();
-		 ArrayList<String> villeList = new ArrayList<>();
+		 ArrayList<Ville> villesSup = new ArrayList<>();
+		 ArrayList<String> listString = new ArrayList<>();
+		 
+		
 		 
 		
 		
@@ -41,6 +44,19 @@ public class LectureFichier {
 			 //retirer des caractères blancs
 			 String maValeur = tokens[8].trim().replaceAll(" ", "");
 		 }
+		 
+		 //Générez maintenant un fichier de sortie ne contenant que les villes de plus de 25 000 habitants
+		 int nb = 25000;
+		 for (Ville ville : villesSup) {
+				
+				
+				if (ville.getPopulationTotale() > nb) {
+					villesSup.add(ville);
+					listString.add(ville.getNom() + ";" + ville.getCodeDépartement() + ";" + ville.getNom_de_la_région() + ";" + ville.getPopulationTotale() + ";");
+					System.out.println(ville.getNom() + ";" + ville.getCodeDépartement() + ";" + ville.getNom_de_la_région() + ";" + ville.getPopulationTotale() + ";");
+				}
+			}
+		 Files.write(path, listes, StandardCharsets.UTF_8);
 		
 	}
 

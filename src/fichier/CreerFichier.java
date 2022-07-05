@@ -23,7 +23,7 @@ public class CreerFichier {
 		for (String line: lines) {
 			if(compteur <= 100) {
 				lineDest.add(line);
-				System.out.println(compteur + " / " + line);
+				System.out.println(compteur + " | " + line);
 			}
 			compteur++;
 		}
