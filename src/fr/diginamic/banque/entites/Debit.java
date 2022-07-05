@@ -15,7 +15,8 @@ public class Debit extends Operation {
 		return test  ;
 	}
 
-
+    //Redéfinissez cette méthode dans la classe Credit pour qu’elle retourne « DEBIT »
+	
 	public String getType() {
 		 return "DEBIT";
 	 }

@@ -8,7 +8,7 @@ public class TestBanque {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		//créez une instance de la classe Compte avec un numéro et un solde de votre choix.
+		//créez une instance de la classe Compte avec un numéro et un solde de votre choix .
 		
 		Compte cp1=new Compte(345,5698.89);
 		Compte cp2=new CompteTaux(258, 5896.85, 9);

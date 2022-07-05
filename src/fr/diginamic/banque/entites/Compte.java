@@ -46,9 +46,9 @@ public class Compte  {
 		this.solde=solde;
 	}
 	
-
+	// Redéfinissez la méthode toString()
 	
-	@Override
+	
 	public String toString() {
 		return "Compte [numéro_de_compte=" + numéro_de_compte + ", solde=" + solde + "]";
 	}

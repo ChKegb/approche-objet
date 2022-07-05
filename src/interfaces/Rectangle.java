@@ -28,9 +28,9 @@ public class Rectangle implements ObjetGeometrique {
 		return (longueur+largeur)*2;
 	}
 
-	@Override
+	
 	public double surface() {
-		// TODO Auto-generated method stub
+		
 		return longueur*largeur;
 	}
 

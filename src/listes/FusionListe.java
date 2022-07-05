@@ -2,11 +2,12 @@ package listes;
 
 import java.util.ArrayList;
 import java.util.List;
+//Tp 10 APPRENDRE A UTILISER LIST ET ARRAYLIST
 
 public class FusionListe {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 		List<String> liste1 = new ArrayList<String>();
 
@@ -37,7 +38,8 @@ public class FusionListe {
 			
 		}
 		// affichage de la liste3
-		System.out.println(liste3);
+		System.out.println("\n l’ensemble des données des 2 listes précédentes");
+		System.out.println("\n"+liste3);
 		
 	
 		

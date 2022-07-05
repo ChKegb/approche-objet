@@ -3,12 +3,13 @@ package listes;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+//Tp 10 APPRENDRE A UTILISER LIST ET ARRAYLIST
 
 
 public class TestListeInt {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// instanciez une ArrayList d’entiers et placez y les éléments suivants : -1, 5, 7, 3, -2, 4, 8, 5
 	   ArrayList<Integer> liste=new ArrayList<>();
 	   liste.add(-1);
 	   liste.add(5);
@@ -22,7 +23,7 @@ public class TestListeInt {
 	   //Affichez tous les éléments de la liste
 	   System.out.println(liste);
 	   //Affichez la taille de la liste
-	   System.out.println(liste.size());
+	   System.out.println("\n la taille de la liste est :"+liste.size());
 	   //Recherchez et affichez le plus grand élément de la liste
 	   int max=0;
 	   for(int i : liste) {
@@ -46,7 +47,7 @@ public class TestListeInt {
 	   // affichant la valeur min
 	   System.out.println(min);
 	   // affichant l'index de la valeur min
-	   System.out.println(index);
+	   System.out.println("\n l'index de la valeur min :"+index);
 	   // suprimons le plus petit valeur en utilisant l'index pointe sur la valeur
 	   liste.remove(index);
 	   // affichant la nouvelle liste apres avoir supprimer le plus petit valeur
@@ -64,6 +65,9 @@ public class TestListeInt {
 	   }
 	   //Affichez enfin la liste résultante
 	   System.out.println("\n la liste positve est :"+ liste);
+	
+	
+	
 	}
 
 }

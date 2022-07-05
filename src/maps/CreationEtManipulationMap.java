@@ -1,9 +1,9 @@
 package maps;
 
-import java.util.Collection;
+//import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Set;
+//import java.util.Set;
 
 
 
@@ -29,17 +29,21 @@ public class CreationEtManipulationMap {
 		// afficher l'ensemble des clés contenues dans la map
 		// on recupere les cles dans notre hashmap
 		// declaration d'un ensemble 
-		Set<Integer> codes=mapVilles.keySet();
+		
 		// on procede au parcours 
-		for(Integer code:codes) {
-			System.out.println(codes);
+		
+		//Mettre en place une boucle pour afficher l'ensemble des cles contenues dans la map
+		//Set<Integer> codes=mapVilles.keySet();
+		System.out.println("des cles contenues dans la map :");
+		for(Integer code:mapVilles.keySet()) {
+			System.out.println(code);
 			
 		}
 		//Mettre en place une boucle pour afficher l'ensemble des valeurs contenues dans la map
-		
-		Collection <String> villes=mapVilles.values();
-		for(String ville:villes) {
-			System.out.println(villes);
+		//Collection <String> villes=mapVilles.values();
+		System.out.println("des valeurs contenues dans la map :");
+		for(String ville:mapVilles.values()) {
+			System.out.println(ville);
 			
 		}
 		System.out.println("Parcours avec Iterator");

@@ -34,6 +34,7 @@ public abstract class Operation {
 		return montantOpération;
 	}
 	//Dans la classe Operation, ajoutez la méthode abstraite suivante : String getType()
+	
 	public abstract String getType();
 		
 	

@@ -1,13 +1,13 @@
 package listes;
 import java.util.ArrayList;
 import java.util.List;
-
+//Tp 10 APPRENDRE A UTILISER LIST ET ARRAYLIST
 public class CreationListe {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
-		//Dans la méthode main, créez une ArrayList d’entiers et stockez-y tous les nombres de 1 à 100
+		
+		//Exercice 1 créez une ArrayList d’entiers et stockez-y tous les nombres de 1 à 100
 		ArrayList<Integer > liste = new ArrayList<>();
        
        for (int i=0;i<100;i++) {

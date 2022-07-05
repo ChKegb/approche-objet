@@ -10,7 +10,7 @@ import interfaces.Rectangle;
 public class TestObjetGeometrique {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Cercle c1=new Cercle(15.0);
 		System.out.println("\n Le perimetre du cercle est :"+ c1.perimetre()+"\n la surface du cercle est :"+ c1.surface());
 		Rectangle r1=new Rectangle(15.0, 10.0);

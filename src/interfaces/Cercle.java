@@ -14,8 +14,8 @@ public class Cercle implements ObjetGeometrique {
 	 *  * @return double
 	*/
 	public double perimetre() {
-		// TODO Auto-generated method stub
-		return 2* Math.PI*rayon;
+		
+		return 2 * Math.PI*rayon;
 	}
 	
 	/** Retourne la surface d’une forme géométrique
@@ -23,7 +23,7 @@ public class Cercle implements ObjetGeometrique {
 	*/
 	public double surface() {
 		
-		return Math.PI*rayon*rayon;
+		return Math.PI * rayon * rayon;
 	}
 
 	@Override

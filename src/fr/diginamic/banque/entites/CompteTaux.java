@@ -1,7 +1,7 @@
 package fr.diginamic.banque.entites;
 
 public class CompteTaux extends Compte {
-
+    //Attribut 
 	private double taux_de_rémunération;
 	
 	
@@ -16,7 +16,7 @@ public class CompteTaux extends Compte {
 
 	@Override
 	public String toString() {
-		//  faire appel au methode toString de la classe mere 
+		//  faire appel au methode toString de la classe mere Compte 
 		String infoCompte=super.toString();
 		return infoCompte + "CompteTaux [taux_de_rémunération=" + taux_de_rémunération + "]";
 	}

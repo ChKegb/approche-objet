@@ -23,12 +23,16 @@ public class FusionMap {
 		
 		//Créer une map appelée map3 et qui contient l’ensemble des données des 2 maps précédentes avec les mêmes clés et les mêmes valeurs
 		HashMap<Integer, String> map3 = new HashMap<Integer, String>();
+		
+		//Dans le cas ou ils ont meme type 
 		map3.putAll(map1);
 		map3.putAll(map2);
 		
-		
-			
 		System.out.println(map3);
+		
+		
+		
+		
 		
 		
 	}
