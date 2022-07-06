@@ -8,15 +8,13 @@ public class TestStringBuilder {
 		
         
         long debut = System.currentTimeMillis(); 
-        
-        StringBuilder sr=new StringBuilder();
+        //Danscetteclasse,ajouteztouslesnombresde1à100000dansuneinstancede StringBuilder.
+        StringBuilder str=new StringBuilder();
         
         for(int i=1;i<100000;i++) {
-    	 sr.append(i);
+    	 str.append(i);
         }
-      
-      
-        
+        System.out.println(str);
         long fin = System.currentTimeMillis();
         System.out.println("Temps écoulé en millisecondes :" + (fin - debut));
 	}
